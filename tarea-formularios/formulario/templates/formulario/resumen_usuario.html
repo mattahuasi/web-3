@@ -1,0 +1,11 @@
+{% block main %}
+<h1>Resumen Usuario</h1>
+
+<p><strong>Nombre:</strong> {{ nombre }}</p>
+<p><strong>Dirección e-mail:</strong> {{ email }}</p>
+<p><strong>Ciudad:</strong> {{ ciudad }}</p>
+<p><strong>Aficiones:</strong> {{ aficiones }}</p>
+<p><strong>Sexo:</strong> {{ sexo }}</p>
+
+<a href="{% url 'formulario_usuario' %}">Regresar</a>
+{% endblock %}
